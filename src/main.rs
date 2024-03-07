@@ -15,7 +15,7 @@ fn add_inverted(number: BigInt) -> BigInt {
 }
 
 fn main() {
-    let original_number: BigInt = 89.into();
+    let original_number: BigInt = VERY_LARGE_TEST.into();
     let mut number: BigInt = original_number.clone();
     let mut steps: u32 = 0;
 
