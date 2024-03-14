@@ -22,6 +22,10 @@ fn main() {
     while !is_palindrome(&number) {
         number = add_inverted(&number);
         steps += 1;
+        
+        if steps % 1000 == 0 {
+            println!("Step: {}", steps);
+        }
     }
 
     println!("Number {} took {} steps", original_number, steps);
